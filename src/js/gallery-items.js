@@ -62,4 +62,109 @@ export const galleryItems = [
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
   },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201909/640x480/look.com.ua-354060.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201909/1280x960/look.com.ua-354060.jpg',
+    description: 'BMW series',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202209/640x480/look.com.ua-393679.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202209/1280x1024/look.com.ua-393679.jpg',
+    description: 'River and tree',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201902/640x480/look.com.ua-330591.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201902/1280x1024/look.com.ua-330591.jpg',
+    description: 'Lovely Cats',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201209/640x480/look.com.ua-24262.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201209/1280x1024/look.com.ua-24262.jpg',
+    description: 'Crazy markers',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201901/640x480/look.com.ua-320769.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201901/1280x1024/look.com.ua-320769.jpg',
+    description: 'Old map',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201901/640x480/look.com.ua-320657.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201901/1280x1024/look.com.ua-320657.jpg',
+    description: 'Train',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202103/640x480/look.com.ua-375515.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202103/1280x1024/look.com.ua-375515.jpg',
+    description: 'Flowers',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202008/640x480/look.com.ua-357648.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202008/1280x1024/look.com.ua-357648.jpg',
+    description: 'Brilliants',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201512/640x480/look.com.ua-140529.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201512/1280x1024/look.com.ua-140529.jpg',
+    description: 'Slipping dog',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202208/640x480/look.com.ua-391672.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202208/1280x1024/look.com.ua-391672.jpg',
+    description: 'Mushroom',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202209/640x480/look.com.ua-393219.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202209/1280x1024/look.com.ua-393219.jpg',
+    description: 'Blue bike',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202206/640x480/look.com.ua-388558.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202206/1280x1024/look.com.ua-388558.jpg',
+    description: 'Beautiful winter',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=201405/640x480/look.com.ua-103386.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=201405/1280x1024/look.com.ua-103386.jpg',
+    description: 'Flag of Canada',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202209/640x480/look.com.ua-393645.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202209/1280x1024/look.com.ua-393645.jpg',
+    description: 'Fresh fruits',
+  },
+  {
+    preview:
+      'https://www.look.com.ua/download.php?file=202209/640x480/look.com.ua-393478.jpg',
+    original:
+      'https://www.look.com.ua/download.php?file=202209/1280x1024/look.com.ua-393478.jpg',
+    description: 'Grey bread',
+  },
 ];
