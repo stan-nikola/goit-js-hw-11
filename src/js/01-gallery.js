@@ -5,8 +5,6 @@ import galleryCardsTpl from '../templates/gallery-cards.hbs';
 
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// Change code below this line
-
 const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkup = createGalleryMarkup(galleryItems);
