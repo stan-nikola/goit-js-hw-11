@@ -7,7 +7,7 @@
 94C:\_education\js\goit-js-hw-08\node_modules\unicode-trie\node_modules\pako\lib\zlib\zstream.js133096213034618765 0
 57C:\_education\js\goit-js-hw-08\node_modules\object.assign133096213034989747 1
 93C:\_education\js\goit-js-hw-08\node_modules\dom-serializer\node_modules\entities\lib\index.js133096213016712263 0
-35C:\_education\js\goit-js-hw-08\dist133099836629163744 1
+35C:\_education\js\goit-js-hw-08\dist133099836629214266 1
 92C:\_education\js\goit-js-hw-08\node_modules\parcel-bundler\node_modules\cssnano\CHANGELOG.md133096213017282886 0
 103C:\_education\js\goit-js-hw-08\node_modules\regenerate-unicode-properties\General_Category\Surrogate.js133096213049520684 0
 57C:\_education\js\goit-js-hw-08\node_modules\xtend\LICENSE133096213010992465 0

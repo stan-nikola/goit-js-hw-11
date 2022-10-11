@@ -3,7 +3,7 @@ import throttle from 'lodash.throttle';
 const inputRef = document.querySelector('.feedback-form');
 const USER_TEMP_DATA = 'feedback-form-state';
 
-class formDataSave {
+class FormDataSave {
   constructor() {
     this.userData = {};
     this.userSavedDataOutput();
@@ -37,7 +37,7 @@ class formDataSave {
     localStorage.removeItem(USER_TEMP_DATA);
   }
 }
-const userExperienceForm = new formDataSave();
+const userExperienceForm = new FormDataSave();
 inputRef.addEventListener(
   'input',
   throttle(userExperienceForm.onFormInput.bind(userExperienceForm), 500)
