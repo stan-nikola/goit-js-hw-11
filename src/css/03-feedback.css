@@ -29,3 +29,12 @@ textarea {
 textarea {
   resize: none;
 }
+.js-age {
+  padding: 0;
+  margin: 0 auto;
+  color: rgb(26, 26, 30);
+  font-weight: 900;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}

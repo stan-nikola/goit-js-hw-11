@@ -15,18 +15,34 @@
 
   <form class="feedback-form" autocomplete="off">
     <label>
-      Email
-      <input type="email" name="email" autofocus />
+      Name
+      <input type="text" name="name" autofocus />
     </label>
     <label>
-      Message
-      <textarea name="message" rows="8"></textarea>
+      Age
+      <input type="range" min="10" max="50" name="age" autofocus />
     </label>
+    <p class="age js-age"></p>
+    <label>
+      Email
+      <input type=" email" name="email" autofocus />
+    </label>
+
+    <label>
+      Phone
+      <input type="tel" name="phone" autofocus />
+    </label>
+
+    <label>
+      Message
+      <textarea name="message" rows="6"></textarea>
+    </label>
+
     <button type="submit">Submit</button>
   </form>
 
-  <!-- <script src="js/03-feedback.js" type="module"></script> -->
-  <script src="js/03-feedback-onClass.js" type="module"></script>
+  <script src="js/03-feedback.js" type="module"></script>
+  <!-- <script src="js/03-feedback-onClass.js" type="module"></script> -->
 
 </body>
 
