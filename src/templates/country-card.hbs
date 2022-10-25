@@ -7,13 +7,7 @@
     <h2 class="country-title">Country: {{this.name.official}} </h2>
     <p class="country-text">Population: {{this.population}} </p>
     <p class="country-text">Capital: {{this.capital}} </p>
-    <ul class="country-text">Languages: 
-    
-    {{#each languages}}
-    <li> {{this}} </li>
-    {{/each}}
-
-    </ul>
+    <p class="country-text">Languages: {{#each languages}}{{this}},{{/each}}</p>
 </div>
 </div>
 {{/each}}
