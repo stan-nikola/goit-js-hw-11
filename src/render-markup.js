@@ -1,8 +1,10 @@
 import countriesListTpl from '../src/templates/countries-list.hbs';
 import countryInfoTpl from '../src/templates/country-card.hbs';
 import message from './notify-messages';
-import refs from './refs';
-console.log(refs);
+
+import getRefs from './get-refs';
+
+const refs = getRefs();
 
 export function renderMarkup(data) {
   if (data.length > 10) {
