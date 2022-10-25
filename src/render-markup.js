@@ -22,7 +22,18 @@ export function renderMarkup(data) {
   if (data.length === 1) {
     message.onFindCountry();
 
-    return (refs.countryInfo.innerHTML = countryInfoTpl(data));
+    refs.countryInfo.innerHTML = countryInfoTpl(data);
+
+    const language = document.querySelector('#language');
+
+    refs.countryInfo.insertAdjacentHTML(
+      'beforeend',
+      `<li class="country__info__data""><span class="country__info__text">Languages:</span>${language.textContent.slice(
+        10,
+        -2
+      )} </li>`
+    );
+    return;
   }
 
   refs.countryList.innerHTML = countriesListTpl(data);

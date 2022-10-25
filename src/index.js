@@ -8,7 +8,7 @@ import getRefs from './get-refs';
 import { renderMarkup, markupReset } from './render-markup';
 import message from './notify-messages';
 
-const DEBOUNCE_DELAY = 300;
+const DEBOUNCE_DELAY = 400;
 
 const refs = getRefs();
 
@@ -20,7 +20,5 @@ refs.countryInput.addEventListener(
 function onCountryInput(e) {
   const inputText = e.target.value.trim();
   markupReset();
-  fetchCountries(inputText).then(renderMarkup).catch(console.log);
+  fetchCountries(inputText).then(renderMarkup).catch(message.onFetchError);
 }
-
-// catch(message.onFetchError);

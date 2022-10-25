@@ -15,7 +15,7 @@ function onEmptyField() {
 function onFindCountry() {
   return new Notify({
     status: 'success',
-    title: 'Well done!',
+    title: 'Success',
     text: 'We found the country according to your request',
     autoclose: true,
     autotimeout: TIME_MSG_CLOSE,

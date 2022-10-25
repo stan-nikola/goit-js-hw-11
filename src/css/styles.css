@@ -26,7 +26,8 @@ p {
 #search-box {
   font: inherit;
   padding: 8px;
-  min-width: 350px;
+  max-width: 350px;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -67,4 +68,17 @@ p {
 }
 .country__info__text {
   font-weight: 700;
+}
+#language {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
