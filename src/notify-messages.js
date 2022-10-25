@@ -4,9 +4,19 @@ const TIME_MSG_CLOSE = 2000;
 
 function onEmptyField() {
   return new Notify({
-    status: 'success',
+    status: 'warning',
     title: 'Please',
     text: 'Enter country name',
+    autoclose: true,
+    autotimeout: TIME_MSG_CLOSE,
+  });
+}
+
+function onFindCountry() {
+  return new Notify({
+    status: 'success',
+    title: 'Well done!',
+    text: 'We found the country according to your request',
     autoclose: true,
     autotimeout: TIME_MSG_CLOSE,
   });
@@ -31,5 +41,20 @@ function onManyMatches() {
     autotimeout: TIME_MSG_CLOSE,
   });
 }
+function onFetchError() {
+  return new Notify({
+    status: 'error',
+    title: 'Connection error!',
+    text: 'Check network connection',
+    autoclose: false,
+    autotimeout: TIME_MSG_CLOSE,
+  });
+}
 
-export default { onEmptyField, onError, onManyMatches };
+export default {
+  onEmptyField,
+  onError,
+  onManyMatches,
+  onFetchError,
+  onFindCountry,
+};

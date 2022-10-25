@@ -11,15 +11,60 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+.container {
+  margin: 0 20px;
+  padding: 0 5px;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
+  min-width: 350px;
   margin-bottom: 16px;
 }
 
-.country-list {
-  text-decoration: none;
+.country__subtitle {
+  margin: 16px 0;
+  font-size: 18px;
+}
+.country__list {
+  padding: 0;
   list-style: none;
+  margin-left: 10px;
+}
+.country__list__item {
+  display: flex;
+  justify-content: baseline;
+}
+.country__list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.country__list__flag {
+  margin-right: 8px;
+}
+
+.country__info {
+  padding: 0;
+  list-style: none;
+}
+.country__info__flag {
+  margin-bottom: 10px;
+}
+.country__info__title {
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.country__info__data:not(:last-child) {
+  margin-bottom: 10px;
+}
+.country__info__text {
+  font-weight: 700;
 }
