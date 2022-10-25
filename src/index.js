@@ -8,7 +8,7 @@ import getRefs from './get-refs';
 import { renderMarkup, markupReset } from './render-markup';
 import message from './notify-messages';
 
-const DEBOUNCE_DELAY = 400;
+const DEBOUNCE_DELAY = 500;
 
 const refs = getRefs();
 

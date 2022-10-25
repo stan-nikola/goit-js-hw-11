@@ -142,7 +142,7 @@
 67C:\_education\js\goit-js-hw-10\node_modules\core-js\es7\weak-set.js133111749295658622 0
 78C:\_education\js\goit-js-hw-10\node_modules\postcss-ordered-values\types\rules133111749261323187 1
 82C:\_education\js\goit-js-hw-10\node_modules\minimalistic-crypto-utils\lib\utils.js133111749244245844 0
-35C:\_education\js\goit-js-hw-10\dist133112076503508067 1
+35C:\_education\js\goit-js-hw-10\dist133112085329926128 1
 79C:\_education\js\goit-js-hw-10\node_modules\postcss-calc\src\lib\convertUnit.js133111749242996949 0
 53C:\_education\js\goit-js-hw-10\node_modules\path-type133111749242189724 1
 52C:\_education\js\goit-js-hw-10\node_modules\uuid\lib133111749253503117 1
@@ -280,7 +280,7 @@
 91C:\_education\js\goit-js-hw-10\node_modules\tough-cookie\node_modules\punycode\package.json133111749232603691 0
 73C:\_education\js\goit-js-hw-10\node_modules\core-js\modules\_an-object.js133111749257378623 0
 95C:\_education\js\goit-js-hw-10\node_modules\@babel\helper-optimise-call-expression\lib\index.js133111749238211881 0
-45C:\_education\js\goit-js-hw-10\src\index.html133112050271830154 0
+45C:\_education\js\goit-js-hw-10\src\index.html133112083210469823 0
 92C:\_education\js\goit-js-hw-10\node_modules\jsdom\lib\jsdom\living\events\CloseEvent-impl.js133111749263361374 0
 60C:\_education\js\goit-js-hw-10\node_modules\lodash\spread.js133111749287590955 0
 73C:\_education\js\goit-js-hw-10\node_modules\caniuse-lite\data\browsers.js133111749268233000 0
@@ -303,7 +303,7 @@
 102C:\_education\js\goit-js-hw-10\node_modules\regenerate-unicode-properties\Script_Extensions\Siddham.js133111749280096700 0
 48C:\_education\js\goit-js-hw-10\node_modules\@swc133111749207782001 1
 108C:\_education\js\goit-js-hw-10\node_modules\postcss-modules-extract-imports\node_modules\postcss\lib\list.js133111749258790839 0
-43C:\_education\js\goit-js-hw-10\src\index.js133112075039000169 0
+43C:\_education\js\goit-js-hw-10\src\index.js133112085326309431 0
 75C:\_education\js\goit-js-hw-10\node_modules\parcel-bundler\src\HMRServer.js133111749275503705 0
 79C:\_education\js\goit-js-hw-10\node_modules\cssnano-preset-default\package.json133111749238028654 0
 66C:\_education\js\goit-js-hw-10\node_modules\command-exists\LICENSE133111749234805918 0
@@ -394,7 +394,7 @@
 115C:\_education\js\goit-js-hw-10\node_modules\parcel-bundler\node_modules\htmlnano\node_modules\posthtml-parser\types133111749254269465 1
 73C:\_education\js\goit-js-hw-10\node_modules\static-module\test\many\a.txt133111749264889193 0
 61C:\_education\js\goit-js-hw-10\src\templates\country-card.hbs133112067769410393 0
-49C:\_education\js\goit-js-hw-10\src\css\styles.css133112070420911864 0
+49C:\_education\js\goit-js-hw-10\src\css\styles.css133112082984806771 0
 84C:\_education\js\goit-js-hw-10\node_modules\parcel-bundler\node_modules\mdn-data\api133111749248828660 1
 92C:\_education\js\goit-js-hw-10\node_modules\parcel-bundler\lib\utils\isAccessedVarChanged.js133111749270168289 0
 123C:\_education\js\goit-js-hw-10\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV1\files\embed\embed2\file3.txt133111749266024340 0
@@ -14434,7 +14434,7 @@
 95C:\_education\js\goit-js-hw-10\node_modules\jsdom\lib\jsdom\living\events\ProgressEvent-impl.js133111749265342685 0
 109C:\_education\js\goit-js-hw-10\node_modules\jsdom\lib\jsdom\living\domparsing\parse5-adapter-serialization.js133111749262857746 0
 83C:\_education\js\goit-js-hw-10\node_modules\css-tree\lib\syntax\atrule\font-face.js133111749264968547 0
-46C:\_education\js\goit-js-hw-10\dist\index.html133112074705526394 0
+46C:\_education\js\goit-js-hw-10\dist\index.html133112084847398354 0
 94C:\_education\js\goit-js-hw-10\node_modules\jsdom\lib\jsdom\living\domparsing\serialization.js133111749263052537 0
 76C:\_education\js\goit-js-hw-10\node_modules\core-js\library\fn\array\some.js133111749293640335 0
 124C:\_education\js\goit-js-hw-10\node_modules\jsdom\lib\jsdom\living\constraint-validation\DefaultConstraintValidation-impl.js133111749261933886 0
@@ -21655,10 +21655,10 @@
 57C:\_education\js\goit-js-hw-10\node_modules\.bin\uuid.ps1133111749297344052 0
 54C:\_education\js\goit-js-hw-10\node_modules\.bin\which133111749297344052 0
 58C:\_education\js\goit-js-hw-10\node_modules\.bin\which.cmd133111749297354342 0
-54C:\_education\js\goit-js-hw-10\dist\index.77a9bc14.css133112074705594189 0
-58C:\_education\js\goit-js-hw-10\dist\index.77a9bc14.css.map133112074705610280 0
-53C:\_education\js\goit-js-hw-10\dist\index.975ef6c8.js133112076503428072 0
-57C:\_education\js\goit-js-hw-10\dist\index.975ef6c8.js.map133112076503508067 0
+54C:\_education\js\goit-js-hw-10\dist\index.77a9bc14.css133112084847398354 0
+58C:\_education\js\goit-js-hw-10\dist\index.77a9bc14.css.map133112084847478688 0
+53C:\_education\js\goit-js-hw-10\dist\index.975ef6c8.js133112085329844453 0
+57C:\_education\js\goit-js-hw-10\dist\index.975ef6c8.js.map133112085329878066 0
 48C:\_education\js\goit-js-hw-10\assets\status.png133111744422265351 0
 48C:\_education\js\goit-js-hw-10\.github\workflows133111744414496525 1
 59C:\_education\js\goit-js-hw-10\.github\workflows\deploy.yml133111744414496525 0
