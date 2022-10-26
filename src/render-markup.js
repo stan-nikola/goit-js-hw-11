@@ -3,23 +3,24 @@ import countryInfoTpl from '../src/templates/country-card.hbs';
 import message from './notify-messages';
 import loadSpinner from './load-spinner';
 import getRefs from './get-refs';
+
 const refs = getRefs();
 
 export function renderMarkup(data) {
   if (data.message === 'Not Found') {
-    loadSpinner.loadingStop();
+    loadSpinner.spinStop();
     refs.countryList.innerHTML = '';
     return message.onError();
   }
 
   if (data.message === 'Page Not Found') {
-    loadSpinner.loadingStop();
+    loadSpinner.spinStop();
     refs.countryList.innerHTML = '';
     return message.onEmptyField();
   }
 
   if (data.length > 10) {
-    loadSpinner.loadingStop();
+    loadSpinner.spinStop();
     return message.onManyMatches();
   }
   if (data.length === 1) {
@@ -37,11 +38,11 @@ export function renderMarkup(data) {
       )} </li>`
     );
     languageRef.remove();
-    loadSpinner.loadingStop();
+    loadSpinner.spinStop();
     return;
   }
   refs.countryList.innerHTML = countriesListTpl(data);
-  loadSpinner.loadingStop();
+  loadSpinner.spinStop();
 }
 
 export function markupReset() {

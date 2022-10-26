@@ -1,6 +1,6 @@
 import { Spinner } from 'spin.js';
 
-var opts = {
+const opts = {
   top: '25%', // Top position relative to parent
   left: '180px', // Left position relative to parent
 
@@ -23,13 +23,14 @@ var opts = {
   position: 'absolute', // Element positioning
 };
 const spinner = new Spinner(opts);
-function loadingStart(insertRef) {
+
+function spinStart(insertRef) {
   spinner.spin(insertRef);
 }
-function loadingStop() {
+function spinStop() {
   spinner.stop();
 }
 export default {
-  loadingStart,
-  loadingStop,
+  spinStart,
+  spinStop,
 };

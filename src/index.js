@@ -9,7 +9,7 @@ import { renderMarkup, markupReset } from './render-markup';
 import message from './notify-messages';
 import loadSpinner from './load-spinner';
 
-const DEBOUNCE_DELAY = 500;
+const DEBOUNCE_DELAY = 300;
 
 const refs = getRefs();
 
@@ -19,10 +19,10 @@ refs.countryInput.addEventListener(
 );
 
 function onCountryInput(e) {
-  const inputText = e.target.value.trim();
+  const inputData = e.target.value.trim();
   markupReset();
-  fetchCountries(inputText)
+  fetchCountries(inputData)
     .then(renderMarkup)
     .catch(message.onFetchError)
-    .finally(loadSpinner.loadingStart(refs.container));
+    .finally(loadSpinner.spinStart(refs.container));
 }
