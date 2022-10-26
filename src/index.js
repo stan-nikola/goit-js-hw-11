@@ -7,6 +7,7 @@ import fetchCountries from './fetch-country-api';
 import getRefs from './get-refs';
 import { renderMarkup, markupReset } from './render-markup';
 import message from './notify-messages';
+import loadSpinner from './load-spinner';
 
 const DEBOUNCE_DELAY = 500;
 
@@ -20,5 +21,8 @@ refs.countryInput.addEventListener(
 function onCountryInput(e) {
   const inputText = e.target.value.trim();
   markupReset();
-  fetchCountries(inputText).then(renderMarkup).catch(message.onFetchError);
+  fetchCountries(inputText)
+    .then(renderMarkup)
+    .catch(message.onFetchError)
+    .finally(loadSpinner.loadingStart(refs.container));
 }

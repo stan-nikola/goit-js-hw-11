@@ -26,15 +26,11 @@ p {
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
-.country__subtitle {
-  margin: 16px 0;
-  font-size: 18px;
-}
 .country__list {
   padding: 0;
   list-style: none;
