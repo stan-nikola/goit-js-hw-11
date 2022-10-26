@@ -2,7 +2,7 @@ import { Spinner } from 'spin.js';
 
 var opts = {
   top: '25%', // Top position relative to parent
-  left: '20%', // Left position relative to parent
+  left: '30%', // Left position relative to parent
 
   lines: 14, // The number of lines to draw
   length: 26, // The length of each line
