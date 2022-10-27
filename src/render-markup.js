@@ -30,7 +30,7 @@ export function renderMarkup(data) {
     const changeData = data.map(el => ({
       ...el,
       languages: Object.values(el.languages).join(', '),
-      latlng: Object.values(el.latlng).join('°, '),
+      latlng: Object.values(el.capitalInfo.latlng).join('°, '),
     }))[0];
 
     refs.countryInfo.innerHTML = countryInfoTpl(changeData);
