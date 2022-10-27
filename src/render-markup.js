@@ -27,13 +27,13 @@ export function renderMarkup(data) {
   if (data.length === 1) {
     message.onFindCountry();
 
-    const changeData = data.map(el => ({
+    const changedData = data.map(el => ({
       ...el,
       languages: Object.values(el.languages).join(', '),
       latlng: Object.values(el.capitalInfo.latlng).join('°, '),
     }))[0];
 
-    refs.countryInfo.innerHTML = countryInfoTpl(changeData);
+    refs.countryInfo.innerHTML = countryInfoTpl(changedData);
 
     loadSpinner.spinStop();
     return;
