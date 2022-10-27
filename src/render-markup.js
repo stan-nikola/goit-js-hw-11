@@ -27,21 +27,17 @@ export function renderMarkup(data) {
   if (data.length === 1) {
     message.onFindCountry();
 
-    refs.countryInfo.innerHTML = countryInfoTpl(data);
+    const changeData = data.map(el => ({
+      ...el,
+      languages: Object.values(el.languages).join(', '),
+    }))[0];
 
-    // const languageRef = document.querySelector('#language');
+    refs.countryInfo.innerHTML = countryInfoTpl(changeData);
 
-    // refs.countryInfo.insertAdjacentHTML(
-    //   'beforeend',
-    //   `<li class="country__info__data""><span class="country__info__text">Languages:</span>${languageRef.textContent.slice(
-    //     10,
-    //     -2
-    //   )} </li>`
-    // );
-    // languageRef.remove();
     loadSpinner.spinStop();
     return;
   }
+
   refs.countryList.innerHTML = countriesListTpl(data);
   loadSpinner.spinStop();
 }
