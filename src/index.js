@@ -18,11 +18,17 @@ refs.countryInput.addEventListener(
   debounce(onCountryInput, DEBOUNCE_DELAY)
 );
 
-function onCountryInput(e) {
+async function onCountryInput(e) {
   const inputData = e.target.value.trim();
+  loadSpinner.spinStart(refs.container);
   markupReset();
-  fetchCountries(inputData)
-    .then(renderMarkup)
-    .catch(message.onFetchError)
-    .finally(loadSpinner.spinStart(refs.container));
+  try {
+    const data = await fetchCountries(inputData);
+    return renderMarkup(data);
+    // .then(renderMarkup)
+    // .catch(message.onFetchError)
+    // .finally(loadSpinner.spinStart(refs.container));
+  } catch (error) {
+    message.onFetchError();
+  }
 }
