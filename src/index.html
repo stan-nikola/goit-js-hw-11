@@ -2,21 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework 10</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image search</title>
 </head>
 
 <body>
-  <div class="container js-container">
-    <input type="text" id="search-box" placeholder="Enter country name..." autocomplete="off" />
-    <ul class="country__list js-country-list"></ul>
-    <ul class="country__info js-country-info"></ul>
-  </div>
-
-  <script src="index.js" type="module"></script>
-
+  <form class="search-form" id="search-form">
+    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+    <button type="submit">Search</button>
+  </form>
+  <div class="container"></div>
+  <script src="./index.js" type="module"></script>
 </body>
 
 </html>

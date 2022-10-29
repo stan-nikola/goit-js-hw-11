@@ -1,24 +1,16 @@
-import './css/styles.css';
-import 'simple-notify/dist/simple-notify.min.css';
-import './css/spinner.css';
+import getData from './js/get-data-api';
+import getRefs from './js/get-refs';
+import renderMarkup from './js/render-markup';
 
-import debounce from 'lodash.debounce';
-import getRefs from './get-refs';
-import { markupReset } from './render-markup';
-import creatingUi from './ui';
+getRefs('#search-form').addEventListener('submit', onSearchInput);
 
-const DEBOUNCE_DELAY = 300;
-
-const refs = getRefs();
-
-refs.countryInput.addEventListener(
-  'input',
-  debounce(onCountryInput, DEBOUNCE_DELAY)
-);
-
-function onCountryInput(e) {
-  const inputData = e.target.value.trim();
-
-  markupReset();
-  creatingUi(inputData);
+async function onSearchInput(e) {
+  e.preventDefault();
+  const userInput = e.currentTarget.searchQuery.value;
+  try {
+    const responseData = await getData(userInput);
+    renderMarkup(responseData.data.hits);
+  } catch (error) {
+    console.log(error);
+  }
 }
