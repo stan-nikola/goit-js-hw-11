@@ -1,0 +1,144 @@
+body {
+  font-family: "Birthstone";
+  color: #212121;
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Birthstone";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/birthstone-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/birthstone-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/birthstone-v10-latin-regular.woff2") format("woff2"), url("../fonts/birthstone-v10-latin-regular.woff") format("woff"), url("../fonts/birthstone-v10-latin-regular.ttf") format("truetype"), url("../fonts/birthstone-v10-latin-regular.svg#Birthstone") format("svg");
+  /* Legacy iOS */
+}
+.card__list,
+.card__meta {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search__thumb {
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.search__form {
+  margin: auto 0;
+}
+
+.search__input {
+  min-width: 260px;
+  height: 30px;
+  border: transparent;
+  outline: none;
+}
+
+.search__label {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search__button {
+  width: 35px;
+  height: 101%;
+  cursor: pointer;
+  background-color: #ced9f4;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 225px;
+  transform: translateY(-50%);
+  transition: background-color 200ms linear, color 200ms linear;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.search__button:hover, .search__button:focus {
+  background-color: #368be5;
+  color: rgb(248, 249, 250);
+}
+
+.label__icon {
+  fill: currentColor;
+}
+
+.card__img-thumb {
+  min-width: 250px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.card__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card__item {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1490196078);
+  overflow: hidden;
+  transition: scale 250ms linear;
+}
+.card__item:hover, .card__item:focus {
+  scale: 1.02;
+}
+
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.card__data-subtitle {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.card__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Birthstone";
+  font-size: 17px;
+}/*# sourceMappingURL=main.css.map */

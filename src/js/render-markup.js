@@ -1,9 +1,9 @@
 import photoCardsTpl from '../templates/photo-cards.hbs';
-import getRefs from './get-refs';
+import getRef from './get-ref';
 
 export default function renderMarkup(dataArr) {
-  console.log(dataArr);
-  console.log(photoCardsTpl(dataArr));
+  // console.log(dataArr);
+  // console.log(photoCardsTpl(dataArr));
 
-  getRefs('.container').innerHTML = photoCardsTpl(dataArr);
+  getRef('.container').innerHTML = photoCardsTpl(dataArr);
 }

@@ -9,7 +9,6 @@ export default async function getData(request) {
     baseURL: 'https://pixabay.com/api',
   };
 
-  console.log(request);
   const response = await axios.get(
     `/?key=${API_KEY}&q=${request}&image_type=photo&orientation=horizontal&safesearch=true`,
     config

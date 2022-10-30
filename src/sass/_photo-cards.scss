@@ -1,0 +1,58 @@
+
+.container {
+    @extend %container
+}
+
+.card__img-thumb{
+min-width: 250px;
+height: 160px;
+overflow: hidden;
+cursor: zoom-in;
+
+}
+.card__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card__list,
+.card__meta {
+    @extend %list
+}
+
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card__item {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px #00000026;
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: scale 250ms linear;
+
+    &:hover,
+    &:focus {
+        scale: 1.02;
+    }
+}
+.card__meta{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.card__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Birthstone';
+    font-size: 17px;
+}
+

@@ -1,16 +1,17 @@
 
-
-
 <ul class="card__list">
-    {{#each this}}
-    <li class="card__item">
-        <img class="card__img" src={{this.webformatURL}} width="270" alt="this.tags">
-        <ul class="card__meta">
-            <li class="card__data">Likes:{{this.likes}}</li>
-            <li class="card__data">Views{{this.views}}</li>
-            <li class="card__data">comments{{this.comments}}</li>
-            <li class="card__data">Downloads{{this.downloads}}</li>
-        </ul>
+{{#each this}}
+<div class="card__item">
+    <a class="card__img-thumb" href={{this.largeImageURL}}  >
+        <img loading="lazy" class="card__img" data-source={{this.largeImageURL}} src={{this.webformatURL}} width="270" height="150" alt={{this.tags}}>
+    </a>
+    <ul class="card__meta">
+        <li class="card__data"><b>Likes</b>{{this.likes}}</li>
+        <li class="card__data"><b>Views</b>{{this.views}}</li>
+        <li class="card__data"><b>Comments</b>{{this.comments}}</li>
+        <li class="card__data"><b>Downloads</b>{{this.downloads}}</li>
+    </ul>
+</div>
 {{/each}}
 </ul>
 
