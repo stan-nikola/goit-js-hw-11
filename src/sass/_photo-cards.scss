@@ -5,7 +5,7 @@
 
 .card__img-thumb{
 min-width: 250px;
-height: 160px;
+
 overflow: hidden;
 cursor: zoom-in;
 
@@ -13,8 +13,9 @@ cursor: zoom-in;
 .card__img {
     display: block;
     max-width: 100%;
-    height: auto;
+
     margin: auto;
+    object-fit: cover;
 }
 
 .card__list,
