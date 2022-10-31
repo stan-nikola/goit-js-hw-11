@@ -2,8 +2,8 @@ import photoCardsTpl from '../templates/photo-cards.hbs';
 import getRef from './get-ref';
 
 export default function renderMarkup(dataArr) {
-  // console.log(dataArr);
-  // console.log(photoCardsTpl(dataArr));
-
-  getRef('.container').innerHTML = photoCardsTpl(dataArr);
+  getRef('.card__list').innerHTML= photoCardsTpl(dataArr);
+}
+export default function renderMarkupScroll(dataArr) {
+  getRef('.card__list').insertAdjacentHTML('beforeend',photoCardsTpl(dataArr))
 }

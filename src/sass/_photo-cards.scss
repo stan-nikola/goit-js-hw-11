@@ -13,8 +13,6 @@ cursor: zoom-in;
 .card__img {
     display: block;
     max-width: 100%;
-
-    margin: auto;
     object-fit: cover;
 }
 
@@ -53,7 +51,5 @@ cursor: zoom-in;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Birthstone';
-    font-size: 17px;
+    font-size: 13px;
 }
-

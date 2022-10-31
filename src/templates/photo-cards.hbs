@@ -1,9 +1,9 @@
 
-<ul class="card__list">
+
 {{#each this}}
 <div class="card__item">
     <a class="card__img-thumb" href={{this.largeImageURL}}  >
-        <img loading="lazy" class="card__img" data-source={{this.largeImageURL}} src={{this.webformatURL}} width="270" height="150" alt={{this.tags}}>
+        <img loading="lazy" class="card__img" data-source={{this.largeImageURL}} src={{this.webformatURL}} data="Author: {{this.user}}" width="270" height="150" alt={{this.tags}}>
     </a>
     <ul class="card__meta">
         <li class="card__data"><b>Likes</b>{{this.likes}}</li>
@@ -13,5 +13,5 @@
     </ul>
 </div>
 {{/each}}
-</ul>
+
 
