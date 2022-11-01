@@ -9,7 +9,7 @@ export default async function getData(searchQuery, page) {
     baseURL: 'https://pixabay.com/api',
   };
 
-  response = await axios.get(
+  const response = await axios.get(
     `/?key=${API_KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=40`,
     config
   );
