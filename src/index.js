@@ -15,5 +15,4 @@ function onSearchInput(e) {
   userInput = e.currentTarget.searchQuery.value;
 
   userInterface(userInput);
-  userInput = '';
 }
