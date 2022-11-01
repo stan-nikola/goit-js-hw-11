@@ -17,6 +17,8 @@ export default async function userInterface(userInput) {
     console.log(userInput);
     getRef('.card__list').innerHTML = '';
 
+    let newUserInput = userInput;
+
     renderMarkup(responseHits);
     notify.foundNumberHits(responseData.data.total);
     galleryViewer();
@@ -27,11 +29,11 @@ export default async function userInterface(userInput) {
           console.log('Пора грузить еще статьи' + Date.now());
           page += 1;
 
-          const newResponseData = await getData(userInput, page);
+          const newResponseData = await getData(newUserInput, page);
 
           responseHits = newResponseData.data.hits;
 
-          renderMarkupScroll(responseHits);
+          renderMarkup(responseHits);
         }
       });
     };
