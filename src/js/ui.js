@@ -4,45 +4,46 @@ import notify from './notifications';
 import galleryViewer from './gallery-viewer';
 import getRef from './get-ref';
 
-let page = 1;
+let newUserInput = '';
+let page;
 
 export default async function userInterface(userInput) {
   try {
-    const responseData = await getData(userInput, page);
+    page = 1;
+
+    newUserInput = userInput;
+    getRef('.card__list').innerHTML = '';
+
+    const responseData = await getData(newUserInput, page);
     let responseHits = responseData.data.hits;
+    console.log(userInput);
+
     if (responseHits.length == 0) {
       return notify.notFoundNotify();
     }
-    page = 1;
-    console.log(userInput);
-    getRef('.card__list').innerHTML = '';
-
-    let newUserInput = userInput;
 
     renderMarkup(responseHits);
     notify.foundNumberHits(responseData.data.total);
     galleryViewer();
-
-    const onEntry = entries => {
-      entries.forEach(async entry => {
-        if (entry.isIntersecting && userInput !== '') {
-          console.log('Пора грузить еще статьи' + Date.now());
-          page += 1;
-
-          const newResponseData = await getData(newUserInput, page);
-
-          responseHits = newResponseData.data.hits;
-
-          renderMarkup(responseHits);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(onEntry, {
-      rootMargin: '150px',
-    });
-    observer.observe(getRef('.footer'));
   } catch (error) {
     console.log(error);
   }
 }
+
+const onEntry = entries => {
+  entries.forEach(async entry => {
+    if (entry.isIntersecting && getRef('.card__item')) {
+      console.log('Пора грузить еще статьи' + Date.now());
+      console.log(newUserInput);
+      page += 1;
+      const responseData = await getData(newUserInput, page);
+      let responseHits = responseData.data.hits;
+      renderMarkup(responseHits);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(onEntry, {
+  rootMargin: '150px',
+});
+observer.observe(getRef('.footer'));
