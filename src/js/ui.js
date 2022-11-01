@@ -24,7 +24,7 @@ export default async function userInterface(userInput) {
 
     const onEntry = entries => {
       entries.forEach(async entry => {
-        if (entry.isIntersecting && !userInput) {
+        if (entry.isIntersecting && userInput !== '') {
           console.log('Пора грузить еще статьи' + Date.now());
           page += 1;
 
