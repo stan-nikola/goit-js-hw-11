@@ -72,7 +72,7 @@ const onEntry = entries => {
 };
 
 const observer = new IntersectionObserver(onEntry, {
-  rootMargin: '500px',
+  rootMargin: '700px',
 });
 observer.observe(getRef('.footer'));
 
