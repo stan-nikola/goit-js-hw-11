@@ -8,12 +8,16 @@ let newUserInput;
 let page;
 let gallery;
 
+const galleryOptions = {
+  captionsData: 'data',
+  captionDelay: 250,
+  alertErrorMessage: 'Image not found, next image will be loaded',
+  disableRightClick: true,
+};
+
 export default async function userInterface(userInput) {
   getRef('.js-up-btn').classList.add('up-btn--hidden');
-  getRef('.js-up-btn').classList.remove(
-    // 'animate__animated',
-    'animate__backInUp'
-  );
+  getRef('.js-up-btn').classList.remove('animate__backInUp');
   try {
     page = 1;
 
@@ -27,14 +31,9 @@ export default async function userInterface(userInput) {
       return notify.notFoundNotify();
     }
 
-    // getRef('.js-up-btn').classList.remove(
-    //   'animate__animated',
-    //   'animate__backInUp'
-    // );
-
     renderMarkup(responseHits);
     notify.foundNumberHits(responseData.data.total, newUserInput);
-    gallery = new SimpleLightbox('.card__list a');
+    gallery = new SimpleLightbox('.card__list a', galleryOptions);
 
     const { height: cardHeight } =
       getRef('.card__list').firstElementChild.getBoundingClientRect();
