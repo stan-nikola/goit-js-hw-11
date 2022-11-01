@@ -6,8 +6,10 @@
         <img loading="lazy" class="card__img" data-source={{this.largeImageURL}} src={{this.webformatURL}} data="Author: {{this.user}}" width="270" height="150" alt={{this.tags}}>
     </a>
     <ul class="card__meta">
-        <li class="card__data"><b>Likes</b>{{this.likes}}</li>
-        <li class="card__data"><b>Views</b>{{this.views}}</li>
+        <li class="card__data"><b>Likes <svg class="label__icon" width="20" height="20">
+            <use href="./images/icons/symbol-defs.svg#icon-likes"></use></b>{{this.likes}}</li>
+        <li class="card__data"><b>Views <svg class="label__icon" width="20" height="20">
+            <use href="./images/icons/symbol-defs.svg#icon-views"></use></b>{{this.views}}</li>
         <li class="card__data"><b>Comments</b>{{this.comments}}</li>
         <li class="card__data"><b>Downloads</b>{{this.downloads}}</li>
     </ul>
