@@ -1,5 +1,6 @@
 .container {
-    @extend %container
+    @extend %container;
+       
 }
 
 .card__img-thumb {
@@ -35,7 +36,7 @@
     overflow: hidden;
     cursor: zoom-in;
     transition: scale 250ms linear;
-    
+    background-color: #ffffff;
 
     &:hover,
     &:focus {
