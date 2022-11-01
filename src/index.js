@@ -12,7 +12,7 @@ getRef('#search-form').addEventListener('submit', onSearchInput);
 function onSearchInput(e) {
   e.preventDefault();
 
-  userInput = e.currentTarget.searchQuery.value;
+  const userInput = e.currentTarget.searchQuery.value;
 
   userInterface(userInput);
 }
