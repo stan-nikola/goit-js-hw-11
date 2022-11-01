@@ -24,12 +24,20 @@ function notFoundNotify() {
     'Sorry!'
   );
 }
-function foundNumberHits(hits) {
+function foundNumberHits(hits, searchQuery) {
   toastr.success(
     `
-  We found ${hits} images.`,
+  We found ${hits} images width ${searchQuery}.`,
     'Hooray!'
   );
 }
 
-export default { notFoundNotify, foundNumberHits };
+function serverError() {
+  toastr.error(
+    `
+  Check network connection`,
+    'Connection error!'
+  );
+}
+
+export default { notFoundNotify, foundNumberHits, serverError };
