@@ -4,7 +4,7 @@ import notify from './notifications';
 import galleryViewer from './gallery-viewer';
 import getRef from './get-ref';
 
-let newUserInput = '';
+let newUserInput;
 let page;
 
 export default async function userInterface(userInput) {
@@ -16,7 +16,6 @@ export default async function userInterface(userInput) {
 
     const responseData = await getData(newUserInput, page);
     let responseHits = responseData.data.hits;
-    console.log(userInput);
 
     if (responseHits.length == 0) {
       return notify.notFoundNotify();
@@ -34,7 +33,7 @@ const onEntry = entries => {
   entries.forEach(async entry => {
     if (entry.isIntersecting && getRef('.card__item')) {
       console.log('Пора грузить еще статьи' + Date.now());
-      console.log(newUserInput);
+
       page += 1;
       const responseData = await getData(newUserInput, page);
       let responseHits = responseData.data.hits;
