@@ -46,13 +46,14 @@
     display: flex;
     justify-content: space-between;
     padding: 7px 10px;
+        color: #044a32d1;
 }
 
 .card__data {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .card__icon{

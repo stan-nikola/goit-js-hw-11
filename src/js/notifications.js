@@ -27,17 +27,13 @@ function notFoundNotify() {
 function foundNumberHits(hits, searchQuery) {
   toastr.success(
     `
-  We found ${hits} images width ${searchQuery}.`,
+  We found ${hits} images with ${searchQuery}.`,
     'Hooray!'
   );
 }
 
 function serverError() {
-  toastr.error(
-    `
-  Check network connection`,
-    'Connection error!'
-  );
+  toastr.error('Check network connection', 'Connection error!');
 }
 
 export default { notFoundNotify, foundNumberHits, serverError };

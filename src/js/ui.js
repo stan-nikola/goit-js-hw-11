@@ -9,6 +9,11 @@ let page;
 let gallery;
 
 export default async function userInterface(userInput) {
+  getRef('.js-up-btn').classList.add('up-btn--hidden');
+  getRef('.js-up-btn').classList.remove(
+    // 'animate__animated',
+    'animate__backInUp'
+  );
   try {
     page = 1;
 
@@ -22,10 +27,10 @@ export default async function userInterface(userInput) {
       return notify.notFoundNotify();
     }
 
-    getRef('.js-up-btn').classList.remove(
-      'animate__animated',
-      'animate__backInUp'
-    );
+    // getRef('.js-up-btn').classList.remove(
+    //   'animate__animated',
+    //   'animate__backInUp'
+    // );
 
     renderMarkup(responseHits);
     notify.foundNumberHits(responseData.data.total, newUserInput);

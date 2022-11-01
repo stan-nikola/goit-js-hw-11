@@ -4,7 +4,7 @@
 <div class="card__item">
     <a class="card__img-thumb" href={{this.largeImageURL}}  >
         <img loading="lazy" class="card__img" data-source={{this.largeImageURL}} src={{this.webformatURL}} data="Author: {{this.user}}" width="270" height="150" alt={{this.tags}}>
-    </a>
+    
     <ul class="card__meta">
         <li class="card__data"><b><svg class="card__icon" width="20" height="20">
             <use href="/goit-js-hw-11/symbol-defs.5de371c6.svg#icon-likes"></use>
@@ -19,6 +19,7 @@
             <use href="/goit-js-hw-11/symbol-defs.5de371c6.svg#icon-download"></use>
         </svg></b>{{this.downloads}}</li>
     </ul>
+    </a>
 </div>
 {{/each}}
 
