@@ -27,7 +27,7 @@ export default async function userInterface(userInput) {
     const responseData = await getData(newUserInput, page);
     let responseHits = responseData.data.hits;
 
-    if (responseHits.length == 0) {
+    if (responseHits.length === 0) {
       return notify.notFoundNotify();
     }
 
